@@ -9,6 +9,9 @@ import { User } from './models/user.interface';
 
 @Injectable()
 export class UserService {
+    updateRoleOfUser(arg0: number, user: User): Observable<User> {
+        throw new Error('Method not implemented.');
+    }
 
     constructor(
         @InjectRepository(UserEntity) private readonly userRepository: Repository<UserEntity>,
